@@ -1,0 +1,16 @@
+.nav {
+  font-size: 18px;
+
+  &__item {
+    padding: 20px;
+    margin: 0 10px;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-text-secondary;
+      border-radius: 5px;
+    }
+
+  }
+
+}

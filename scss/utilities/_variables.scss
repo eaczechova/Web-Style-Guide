@@ -1,17 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900&display=swap');
+// Descriptive color variables
+
+$mine-shaft: rgb(63, 63, 63);
+$white: rgb(255, 255, 255);
+$turquoise: rgb(77, 221, 179);
+$malibu: rgb(70, 213, 251);
+$emerald: rgb(85, 197, 110);
+$roman: rgb(219, 94 ,103);
+$orange: rgb(250, 96, 68);
+$deluge: rgb(127, 100, 180);
 
 // Functional color variables
 
-$color-text-primary: rgb(63, 63, 63);
-$color-text-secondary: rgb(255, 255, 255);
+$color-text-primary: $mine-shaft;
+$color-text-secondary: $white;
 
-$color-primary: rgb(77, 221, 179);
-$color-default: rgb(70, 213, 251);
-$color-success: rgb(85, 197, 110);
-$color-error: rgb(219, 94 ,103);
-$color-warning: rgb(250, 96, 68);
-$color-info: rgb(127, 100, 180);
-
+$color-primary: $turquoise;
+$color-default: $malibu;
+$color-success: $emerald;
+$color-error: $roman;
+$color-warning: $orange;
+$color-info: $deluge;
 
 // Grid theme cololrs
 
@@ -25,10 +33,23 @@ $grid-colors: (
   'col--8': rgb(250, 139, 114),
 )  ;
 
-// Font stacks
+// Font Stacks
 
-$stack-sans-serif: sans-serif;
-$stack-lato: 'Lato', $stack-sans-serif;
+$font-ulr--google: 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900';
+$font-family--primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font weight
+
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+// Text
+
+$base__font-size: 16px;
+$base__line: 24px;
 
 // Media query breakpoints
 

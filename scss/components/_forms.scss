@@ -1,7 +1,6 @@
 .form {
 
   &__label {
-  
     width: 90%;
     &--hidden {
       display: none;
@@ -14,6 +13,6 @@
     margin: 0 auto 20px;
     padding: 15px;
     border: none;
-    border-bottom: 5px solid $color-primary;
+    border-bottom: 5px solid map-get($button-colors, primary);
   }
 }

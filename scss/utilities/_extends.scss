@@ -1,1 +1,52 @@
+// Links
 
+.link {
+  color: map-get($button-colors, default);;
+  font-weight: $font-weight--bold;
+
+  &:visited, &:active {
+    color: map-get($button-colors, default);;
+  }
+}
+
+// Buttons
+
+%button {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  color: $color-text-secondary;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+//Grid bars
+
+%grid-bar {
+  width: 95%;
+  padding: 10px;
+}
+
+
+// Center image elements
+
+%centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+// Margin auto
+
+%margin-auto {
+  margin: 0 auto;
+}
+
+//  Border
+
+%border {
+  border: 1px solid $color-text-primary;
+}

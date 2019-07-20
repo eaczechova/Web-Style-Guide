@@ -7,3 +7,23 @@
     }
   }
 }
+
+// Button background color mixin
+
+@mixin button-color($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  };
+}
+
+// Button background color on :hover mixin
+
+@mixin button-color-hover($map) {
+  @each $theme, $color in $map {
+    &--#{$theme}:hover {
+      background-color: darken($color, 10%);
+    }
+  }
+}

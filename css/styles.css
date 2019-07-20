@@ -1,3 +1,43 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
+.link {
+  color: #46d5fb;
+  font-weight: 700;
+}
+.link:visited, .link:active {
+  color: #46d5fb;
+}
+
+[class^=btn--] {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.grid__row .theme__colors.grid {
+  width: 95%;
+  padding: 10px;
+}
+
+​ .img--logo, ​ .img--frame {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card p {
+  margin: 0 auto;
+}
+
+​ .img--frame {
+  border: 1px solid #3f3f3f;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,12 +381,6 @@ template {
   box-sizing: border-box;
 }
 
-body {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 ul {
   list-style: none;
   margin: 0;
@@ -525,6 +559,40 @@ p {
   background-color: #fa8b72;
 }
 
+.container {
+  font-family: "Lato", sans-serif;
+  width: 95%;
+  line-height: 1.5;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.headline--primary {
+  color: #4dddb3;
+  padding: 0 70px;
+}
+
+.headline--secondary {
+  font-weight: 100;
+  padding: 0 40px;
+  font-size: 20px;
+}
+
+.card p {
+  padding: 0 25px;
+}
+
+.blockquote {
+  border-left: 8px solid #4dddb3;
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 25px;
+  margin-left: 70px;
+  font-style: italic;
+  line-height: 36px;
+  font-weight: 300;
+}
+
 .nav {
   font-size: 18px;
 }
@@ -536,6 +604,49 @@ p {
   background-color: #4dddb3;
   color: white;
   border-radius: 5px;
+}
+
+.img--avatar {
+  display: block;
+}
+​ .img--frame {
+  padding: 20px;
+}
+.btn--primary {
+  background-color: #4dddb3;
+}
+.btn--default {
+  background-color: #46d5fb;
+}
+.btn--success {
+  background-color: #55c56e;
+}
+.btn--error {
+  background-color: #db5e67;
+}
+.btn--warning {
+  background-color: #fa6044;
+}
+.btn--info {
+  background-color: #7f64b4;
+}
+.btn--primary:hover {
+  background-color: #28cf9e;
+}
+.btn--default:hover {
+  background-color: #14cafa;
+}
+.btn--success:hover {
+  background-color: #3bac54;
+}
+.btn--error:hover {
+  background-color: #d23440;
+}
+.btn--warning:hover {
+  background-color: #f93612;
+}
+.btn--info:hover {
+  background-color: #664b9a;
 }
 
 .form__label {

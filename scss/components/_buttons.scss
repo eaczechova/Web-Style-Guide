@@ -1,1 +1,10 @@
+// Button style
 
+.btn {
+  @include button-color($button-colors);
+  @include button-color-hover($button-colors);
+}
+
+[class^="btn--"] {
+  @extend %button;
+}

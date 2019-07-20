@@ -6,7 +6,7 @@
     margin: 0 10px;
 
     &:hover {
-      background-color: $color-primary;
+      background-color: map-get($button-colors, primary);
       color: $color-text-secondary;
       border-radius: 5px;
     }

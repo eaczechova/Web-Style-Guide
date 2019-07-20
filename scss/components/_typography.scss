@@ -1,0 +1,42 @@
+// Import if Google Fonts is defined
+
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+.container {
+  font-family: $font-family--primary;
+  width: 95%;
+  line-height: ($base__line/$base__font-size);
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.headline--primary {
+  color: map-get($button-colors, primary);
+  padding: 0 70px;
+}
+
+.headline--secondary {
+  font-weight: $font-weight--thin;
+  padding: 0 40px;
+  font-size: 20px;
+}
+
+.card {
+  p {
+    @extend %margin-auto;
+    padding: 0 25px;
+  }
+}
+
+.blockquote {
+  border-left: 8px solid map-get($button-colors, primary);
+  border-radius: 5px;
+  padding-left: 20px;
+  font-size: 25px;
+  margin-left: 70px;
+  font-style: italic;
+  line-height: $base__line * 1.5;
+  font-weight: $font-weight--light;
+}

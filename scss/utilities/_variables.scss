@@ -14,12 +14,16 @@ $deluge: rgb(127, 100, 180);
 $color-text-primary: $mine-shaft;
 $color-text-secondary: $white;
 
-$color-primary: $turquoise;
-$color-default: $malibu;
-$color-success: $emerald;
-$color-error: $roman;
-$color-warning: $orange;
-$color-info: $deluge;
+// Button theme cololrs
+
+$button-colors: (
+  'primary': $turquoise,
+  'default': $malibu,
+  'success': $emerald,
+  'error': $roman,
+  'warning': $orange,
+  'info': $deluge,
+);
 
 // Grid theme cololrs
 
@@ -31,17 +35,12 @@ $grid-colors: (
   'col--5': rgb(112, 212, 143),
   'col--7': rgb(229, 139, 146),
   'col--8': rgb(250, 139, 114),
-)  ;
+);
 
 // Font Stacks
 
-@if variable-exists(font-url--google) {
-  @import url($font-url--google);
-}
-
-
 $font-url--google: 'https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900';
-$font-family--primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--primary: 'Lato', sans-serif;
 
 // Font weight
 

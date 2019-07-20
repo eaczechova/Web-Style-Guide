@@ -1,14 +1,16 @@
 .img {
 
 	&--avatar {
-
+		display: block;
   }
 ​
 	&--frame {
-
+		@extend %centered;
+		@extend %border;
+		padding: 20px;
   }
 ​
 	&--logo {
-
+		@extend %centered;
     }
   }

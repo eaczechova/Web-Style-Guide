@@ -1,0 +1,9 @@
+// Grid background color mixin
+
+@mixin themes($map) {
+  @each $theme, $color in $map {
+    &__#{$theme} {
+      background-color: $color;
+    }
+  }
+}

@@ -10,6 +10,9 @@
   width: 95%;
   line-height: ($base__line/$base__font-size);
   margin: 0 auto;
+  @include mq(m) {
+    width: 85%;
+  }
 }
 
 .headline--primary {
@@ -21,6 +24,11 @@
   font-weight: $font-weight--thin;
   padding: 0 em(20px);
   font-size: em(18px);
+
+  @include mq(m) {
+    padding: 0 em(30px);
+    margin-top: 20px;
+  }
 }
 
 .card {
@@ -41,4 +49,13 @@
   font-style: italic;
   line-height: $base__line * 1.5;
   font-weight: $font-weight--light;
+  @include mq(m) {
+    margin-left: em(30px);
+  }
+}
+
+.centered {
+  @include mq(m) {
+    margin: 0 auto;
+  }
 }

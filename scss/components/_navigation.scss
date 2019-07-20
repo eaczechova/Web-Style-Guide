@@ -2,9 +2,18 @@
   font-size: em(18px);
   margin-bottom: $margin-bottom;
 
+  @include mq(m) {
+    @include flexy($just: center);
+    margin-top: 45px;
+  }
+
   &__item {
     padding: em(14px);
     margin: 0 em(10px);
+
+    @include mq(m) {
+      padding: em(5px);
+    }
 
     &:hover {
       background-color: map-get($button-colors, primary);

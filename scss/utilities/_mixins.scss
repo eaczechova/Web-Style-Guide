@@ -17,6 +17,9 @@
       background-color: $color;
     }
   };
+  @include mq(m) {
+    margin-right: 10px;
+  }
 }
 
 // Button background color on :hover mixin

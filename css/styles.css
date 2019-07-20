@@ -558,12 +558,25 @@ p {
   background-color: #fa8b72;
 }
 
+@media (min-width: 769px) {
+  .grid__col--12 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .container {
   font-family: "Lato", sans-serif;
   color: #676d6c;
   width: 95%;
   line-height: 1.5;
   margin: 0 auto;
+}
+@media (min-width: 769px) {
+  .container {
+    width: 85%;
+  }
 }
 
 .headline--primary {
@@ -575,6 +588,12 @@ p {
   font-weight: 100;
   padding: 0 1.25em;
   font-size: 1.125em;
+}
+@media (min-width: 769px) {
+  .headline--secondary {
+    padding: 0 1.875em;
+    margin-top: 20px;
+  }
 }
 
 .card p {
@@ -593,14 +612,37 @@ p {
   line-height: 36px;
   font-weight: 300;
 }
+@media (min-width: 769px) {
+  .blockquote {
+    margin-left: 1.875em;
+  }
+}
+
+@media (min-width: 769px) {
+  .centered {
+    margin: 0 auto;
+  }
+}
 
 .nav {
   font-size: 1.125em;
   margin-bottom: em(50px);
 }
+@media (min-width: 769px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+  }
+}
 .nav__item {
   padding: 0.875em;
   margin: 0 0.625em;
+}
+@media (min-width: 769px) {
+  .nav__item {
+    padding: 0.3125em;
+  }
 }
 .nav__item:hover {
   background-color: #4dddb3;
@@ -632,6 +674,11 @@ p {
 .btn--info {
   background-color: #7f64b4;
 }
+@media (min-width: 769px) {
+  .btn {
+    margin-right: 10px;
+  }
+}
 .btn--primary:hover {
   background-color: #28cf9e;
 }
@@ -651,6 +698,12 @@ p {
   background-color: #664b9a;
 }
 
+@media (min-width: 769px) {
+  [class^=btn--] {
+    margin-right: 20px;
+  }
+}
+
 .form__label {
   width: 90%;
 }
@@ -664,6 +717,11 @@ p {
   padding: 0.9375em;
   border: none;
   border-bottom: 5px solid #4dddb3;
+}
+@media (min-width: 769px) {
+  .form__input {
+    width: 95%;
+  }
 }
 
 ::placeholder {

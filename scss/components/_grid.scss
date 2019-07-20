@@ -73,6 +73,5 @@
 .grid__row {
   .theme__colors.grid {
     @include themes($grid-colors);
-    @extend %grid-bar;
   }
 }

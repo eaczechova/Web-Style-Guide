@@ -1,14 +1,15 @@
 .nav {
-  font-size: 18px;
+  font-size: em(18px);
+  margin-bottom: $margin-bottom;
 
   &__item {
-    padding: 20px;
-    margin: 0 10px;
+    padding: em(14px);
+    margin: 0 em(10px);
 
     &:hover {
       background-color: map-get($button-colors, primary);
       color: $color-text-secondary;
-      border-radius: 5px;
+      border-radius: $border-radious;
     }
 
   }

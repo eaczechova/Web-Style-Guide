@@ -1,6 +1,6 @@
 // Descriptive color variables
 
-$mine-shaft: rgb(63, 63, 63);
+$corduroy: rgb(103, 109, 108);
 $white: rgb(255, 255, 255);
 $turquoise: rgb(77, 221, 179);
 $malibu: rgb(70, 213, 251);
@@ -11,7 +11,7 @@ $deluge: rgb(127, 100, 180);
 
 // Functional color variables
 
-$color-text-primary: $mine-shaft;
+$color-text-primary: $corduroy;
 $color-text-secondary: $white;
 
 // Button theme cololrs
@@ -54,6 +54,14 @@ $font-weight--ultra-bold: 900;
 
 $base__font-size: 16px;
 $base__line: 24px;
+
+// Border
+
+$border-radious: 5px;
+
+// Margins
+
+$margin-bottom: em(50px);
 
 // Media query breakpoints
 

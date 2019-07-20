@@ -1,16 +1,9 @@
-.img {
+[class^="img--"] {
+  @extend %centered;
+}
 
-	&--avatar {
-		display: block;
-  }
-​
-	&--frame {
-		@extend %centered;
-		@extend %border;
-		padding: 20px;
-  }
-​
-	&--logo {
-		@extend %centered;
-    }
-  }
+.img--frame {
+	margin-bottom:$margin-bottom;
+	padding: em(15px);
+	border: 1px solid $color-text-primary;
+}

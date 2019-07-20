@@ -4,6 +4,7 @@
   @each $theme, $color in $map {
     &__#{$theme} {
       background-color: $color;
+      @extend %grid-bar;
     }
   }
 }
@@ -24,6 +25,34 @@
   @each $theme, $color in $map {
     &--#{$theme}:hover {
       background-color: darken($color, 10%);
+    }
+  }
+}
+
+// Create flex container
+
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null
+) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+// Media queries
+
+@mixin mq($break) {
+  @if $break == 'm' {
+    @media (min-width: $break-m) {
+      @content;
+    }
+  } @else if $break == 'l' {
+    @media (min-width: $break-l) {
+      @content;
     }
   }
 }

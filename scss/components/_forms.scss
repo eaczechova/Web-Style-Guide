@@ -9,10 +9,15 @@
 
   &__input {
     display: block;
-    width: 75%;
-    margin: 0 auto 20px;
-    padding: 15px;
+    width: 85%;
+    margin: 0 auto em(20px);
+    padding: em(15px);
     border: none;
     border-bottom: 5px solid map-get($button-colors, primary);
   }
+}
+
+::placeholder {
+  font-size: em(14px);
+  font-weight: $font-weight--bold;
 }

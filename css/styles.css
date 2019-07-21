@@ -708,7 +708,7 @@ p {
   width: 90%;
 }
 .form__label--hidden {
-  display: none;
+  display: hidden;
 }
 .form__input {
   display: block;
